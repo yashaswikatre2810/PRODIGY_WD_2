@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer and Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            <div class="timer-content">
+                <p class="timer" id="timer">00:00</p>
+            </div>
+        </div>
+        <div class="controls">
+            <input type="file" id="ringtoneInput" accept="audio/*" onchange="setRingtone()">
+            <button class="button start" onclick="startTimer()">Start Timer</button>
+            <button class="button start" onclick="startStopwatch()">Start Stopwatch</button>
+            <button class="button pause" onclick="pause()">Pause</button>
+            <button class="button reset" onclick="reset()">Reset</button>
+            <button class="button playRingtone" onclick="playRingtone()">Play Ringtone</button>
+        </div>
+    </div>
+    <div class="watermark-container">
+        <p class="watermark-text">Coded and created by Mohsin Malik.</p>
+        <a href="https://github.com/Mohsinnmalik" class="github-link" target="_blank">Visit my GitHub</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

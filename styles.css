@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.hdqwalls.com/download/thrill-ride-outrun-drive-4k-4c-1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    width: 80%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(123, 133, 189, 0.8);
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.timer {
+    font-size: 3rem;
+    color: #fff; /* White text color */
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Dark text shadow */
+    animation: pulse 1s infinite;
+    transition: transform 0.3s ease-in-out;
+    margin: 0;
+}
+
+.timer:hover {
+    transform: scale(1.1);
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: rgba(170, 194, 240, 0.8); /* Semi-transparent white background */
+    color: #000; /* Black text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background on hover */
+    color: rgb(79, 211, 235); /* White text color on hover */
+}
+
+.watermark-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.watermark-text {
+    font-size: 0.8rem;
+    color: rgba(225, 230, 236, 0.952);
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 5px;
+}
+
+.github-link {
+    font-size: 0.7rem;
+    color: #3498db;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.github-link:hover {
+    color: #2980b9;
+}
